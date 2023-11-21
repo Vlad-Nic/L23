@@ -7,7 +7,7 @@ def generate_sine_wave(frequency, duration, sample_rate):
     amplitude = np.sin(2 * np.pi * frequency * time)
     return time, amplitude
 
-def plot_sine_wave(frequency=250, duration=1, sample_rate=44100):
+def plot_sine_wave(frequency=8, duration=1, sample_rate=44100):
     time, amplitude = generate_sine_wave(frequency, duration, sample_rate)
 
     plt.plot(time, amplitude, label=f'Sine Wave ({frequency} Hz)')
